@@ -1,4 +1,8 @@
 Testrun::Application.routes.draw do
+  get "sources/a1"
+
+  get "sources/a2"
+
   resources :projects
 
   # The priority is based upon order of creation:

@@ -10,6 +10,15 @@
 
 
 <% @projects.each do |project| %>
+   <% project.sources.each do |source| %>
+       <tr>
+           <td>URL: <%= source.url %></td>
+           <td>Position: <%= source.position %></td>
+           <td> Alias: <%= source.alias %></td>
+
+        </tr>
+   <% end %>
+
   <tr>
     <td></td>
     <td><%= project.name %></td>
